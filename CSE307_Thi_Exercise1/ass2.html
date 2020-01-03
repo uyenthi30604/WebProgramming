@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form</title>
+    <meta charset="utf-8">
+
+
+</head>
+
+<body>
+    <form name="myForm" method="get" action="">
+        <p><label for="mail">Email address</label></p>
+        <input type="email" required="true" name="mail" id="mail" />
+        <p><label for="pass">Password</label></p>
+        <input type="password" name="password" id="pass" />
+        <p>Example textarea</p>
+        <textarea name="message" rows="5"></textarea>
+        <br>
+        <p>Gender</p>
+        <input type="radio" name="Gender" value="Male"> Male
+        <input type="radio" name="Gender" value="Female"> Female
+        <input type="radio" name="Gender" value="Other"> Other
+        <br>
+        <fieldset>
+            <legend>Favourite</legend>
+            <input type="checkbox" name="Favourite" value="Reading" /> Reading
+            <input type="checkbox" name="Favourite" value="Swimming" /> Swimming
+            <input type="checkbox" name="Favourite" value="Singing" /> Singing
+            <input type="checkbox" name="Favourite" value="Travelling" />Travelling
+        </fieldset>
+        <!-- <p>Favourite</p>
+        <input type="checkbox" name="Favourite" value="Reading" /> Reading
+        <input type="checkbox" name="Favourite" value="Swimming" /> Swimming
+        <input type="checkbox" name="Favourite" value="Singing" /> Singing
+        <input type="checkbox" name="Favourite" value="Travelling" />Travelling -->
+        <div>
+            <p>Province</p>
+            <select name="province">
+                <option value="value 1" selected>Binh Duong</option>
+                <option value="value 2">HCM City</option>
+                <option value="value 3">Ha Noi</option>
+
+            </select>
+        </div>
+        <input type="range" min="1900" max="2020" name="yearOfBirth" /> Year of birth
+        <br>
+        <input type="number" min="1" max="200" name="age" value="1" /> Age
+        <br>
+        <div>
+            <input type="reset" name="resetBtn" value="Reset the form" />
+            <input type="submit" name="submitBtn" value="Submit" />
+        </div>
+
+
+    </form>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/gIOyB9ZXn8s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+</body>
+
+</html>
