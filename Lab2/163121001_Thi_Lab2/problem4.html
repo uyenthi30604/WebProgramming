@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Poblem 4</title>
+    <meta charset="utf-8">
+
+</head>
+
+<body>
+    <form>
+        <table border="1" cellpadding="1">
+            <tr>
+                <td><label><b>Last Name</b></label></td>
+                <td>
+                    <input type="text" name="lastName" placeholder="Nakov" />
+                </td>
+            </tr>
+
+            <tr>
+                <td><label><b>First Name</b></label></td>
+                <td>
+                    <input type="text" name="firstName" placeholder="Svetlin" />
+                </td>
+            </tr>
+
+            <tr>
+                <td><label><b>Address</b></label></td>
+                <td>
+                    <textarea name="address" rows="4" cols="80"
+                    placeholder="17 Hristo Botev Str. flor 3, apt. 12"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><label><b>City</b></label></td>
+                <td>
+                    <table border="1">
+                        <tr>
+                            <td>
+                                <input type="text" name="city" placeholder="Kaspichan" />
+                            </td>
+                            <td><b>State</b></td>
+                            <td>
+                                <input type="text" name="state" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label><b>Zip/Postal Code</b></label></td>
+                <td>
+                    <input type="text" name="zipCode" placeholder="9325" />
+                </td>
+            </tr>
+            <tr>
+                <td><label><b>Country</b></label></td>
+                <td>
+                    <select name="country">
+                        <option value="value 1" selected>VietNam</option>
+                        <option value="value 1">Laos</option>
+                        <option value="value 1">Cambodia</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label><b>Phone (country code, area code, number)</b></label></td>
+                <td>
+                    (+
+                    <input type="text" name="countryCode" placeholder="359" />)
+                    <input type="text" name="areaCode" placeholder="88" /> -
+                    <input type="text" name="number" placeholder="8334343" />
+                </td>
+            </tr>
+            <tr>
+                <td><label><b>E-mail</b></label></td>
+                <td> <input type="email" name="email" placeholder="nakvo@kaspichan.org" /> </td>
+            </tr>
+            <tr>
+                <td><label><b>Birth date</b></label></td>
+                <td>
+                    Month
+                    <input type="text" name="month" placeholder="06" />
+                    Day
+                    <input type="text" name="day" placeholder="14" />
+                    Year(4 digit)
+                    <input type="text" name="year" placeholder="1980" />
+                </td>
+            </tr>
+            <tr>
+                <td><label><b>Gender</b></label></td>
+                <td>
+                    <select name="gender">
+                        <option value="value 1" selected>Male</option>
+                        <option value="value 1">Female</option>
+                        <option value="value 1">Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label><b>Starting date</b></label></td>
+                <td>
+                    <input type="radio" name="startingDate" value="Spring2006" checked>Spring 2006
+                    <input type="radio" name="startingDate" value="Summer2006">Summer 2006
+                </td>
+            </tr>
+
+            <tr>
+                <td><label><b>Comments/ Questions</b></label></td>
+                <td>
+                    <textarea name="comment" rows="5" cols="80"
+                        placeholder="please send me nor infromation about the lodging."></textarea>
+                </td>
+            </tr>
+
+            <tr style="background-color: turquoise;">
+                <td colspan="2" align="center">
+                    <input type="button" name="submit" value="submit" />
+                    <input type="reset" name="clearForm" value="Clear this form" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
