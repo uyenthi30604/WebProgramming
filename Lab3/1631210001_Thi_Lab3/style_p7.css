@@ -1,0 +1,51 @@
+.blue{
+    color: #116FA2;
+    font-weight: bold;
+}
+.redIcon{
+    width: 18px;
+    height: auto;
+}
+.grey,i{
+    color: gainsboro;
+    font-size: 12px;
+}
+.bold{
+    font-weight: bold;
+}
+section{
+    font-family: 'Roboto Condensed';
+}
+.avatar{
+    width: 20px;
+    height: auto;
+    border-radius: 50%;
+}
+.s1{
+    float: left;
+    margin: 1% 1%;
+    width: 48%;
+    height: 50%;
+    border-style: groove;
+    padding: 2px;
+    
+    
+}
+.s2{
+    float: right;
+    margin: 1% 1%;
+    width: 45%;
+    height: 50%;
+    border-style: groove;
+    padding: 2px;
+}
+.name{
+    color: #3DC1ED;
+    font-size: 14px;
+}
+div{
+    padding: 4px;
+}
+hr{
+    border: 1px dashed gainsboro;
+}

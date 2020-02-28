@@ -1,0 +1,32 @@
+section{
+ 
+    margin: auto;
+    width: 25%;
+    height: 50%;
+    border: 1px solid gainsboro;
+    padding: 10px;
+    font-family: 'Roboto';
+   
+    
+}
+img{
+    width: 40%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.price{
+    color: red;
+    font-weight: bold;
+}
+div{
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.content{
+    font-size: 14px;
+}

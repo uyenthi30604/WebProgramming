@@ -1,0 +1,29 @@
+.title{
+    text-align: left;
+    color: gray;
+    font-size: 20px;
+}
+.yellow{
+    color: yellow;
+}
+.red{
+    color: red;
+}
+
+.orange{
+    color: orange;
+}
+.grey{
+    color: gray;
+}
+.comp{
+    font-style: italic;
+    color: white;
+}
+i{
+    color: rgb(70, 172, 70);
+}
+table{
+    background-color: #535050;
+    font-family: 'Lato';
+}

@@ -1,0 +1,19 @@
+img{
+    width: 20px;
+    height: auto;
+}
+
+table{
+    font-family: 'Noto Sans';
+    
+}
+.green{
+    background-color: rgb(56, 189, 56);
+    color: white;
+}
+.gold{
+    background-color: rgb(228, 217, 186);
+}
+i{
+    color: gray;
+}
