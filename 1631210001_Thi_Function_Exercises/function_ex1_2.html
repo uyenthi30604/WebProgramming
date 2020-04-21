@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Function 1 & 2</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script type="text/javascript">
+        var studentList = ['Nguyen Pham Uyen Thi', 'Nguyen Van A', 'Nguyen Thi A', 'Tran Van B', 'Nguyen Ngoc A'];
+        var array_2 = ['pink','grey','black','white'];
+        prints(studentList);
+        deleteItem('black',array_2);
+        prints(array_2);
+
+        function prints(array_1) {
+            for (var i = 0; i < array_1.length; i++) {
+                console.log(array_1[i]);
+            }
+        }
+
+        function deleteItem(value,listItem){
+            for(var i=0;i<listItem.length;i++){
+                if(listItem[i]==value){
+                    var index=i;
+                    listItem.splice(i,1);
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
