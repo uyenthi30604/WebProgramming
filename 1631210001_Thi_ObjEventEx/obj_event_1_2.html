@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Object</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script type="text/javascript">
+        function product(_id, _name, _image, _price, _dis_price) {
+            return {
+                id: _id,
+                name: _name,
+                image: _image,
+                price: _price,
+                dis_price: _dis_price,
+                toString: function () {
+                    console.log(this.name);
+                }
+            }
+        }
+
+        function deleteById(listProduct, deleteId) {
+            for (var i=0;i<listOfProducts.length;i++){
+                if(listOfProducts[i].id==deleteId){
+                    listOfProducts.splice(i,1);
+                }
+            }
+        }
+
+        pr_name = 'Candy';
+        pr_image = "http://....";
+        pr_price = 500;
+        pr_dis_price = 200;
+        let listOfProducts = [];
+        for (var i = 0; i < 4; i++) {
+            var aProduct = {};
+            aProduct = product(i, pr_name, pr_image, pr_price, pr_dis_price);
+            listOfProducts.push(aProduct);
+        }
+    </script>
+</body>
+
+</html>
