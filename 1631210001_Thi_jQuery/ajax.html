@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Ajax</title>
+
+    <style type="text/css">
+        header,
+        footer {
+            background-color: grey;
+            color: white;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .menu,
+        .content {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .content {
+            /*border: 1px solid #ccc;*/
+        }
+
+        .content-border {
+            border: 1px solid #ccc;
+            padding: 10px 15px;
+        }
+
+        h2.title {
+            color: #555;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: inline-block;
+            border-bottom: 5px solid #ff8c00;
+            font-size: 18px;
+            font-weight: bold;
+            padding-bottom: 3px;
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+
+        .item article {
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
+            padding: 15px;
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .item img {
+            display: block;
+            margin: 0 auto;
+            width: 60%;
+            height: auto;
+        }
+
+        .item .giam-gia {
+            position: absolute;
+            top: 15px;
+            right: 25px;
+            padding-bottom: 4px;
+            color: #fff;
+            width: 40px;
+            height: 36px;
+            background-image: url("https://frontend.tikicdn.com/_new-next/static/img/icons/product/deal-tag.png");
+            background-size: 40px 36px;
+            background-position: 0px 0px;
+        }
+
+        .item .ten-sp {
+            color: #555;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .item a:hover,
+        .news a:hover {
+            text-decoration: none;
+        }
+
+        .item article:hover .ten-sp,
+        .news:hover a h3 {
+            color: rgb(24, 158, 255);
+        }
+
+        .item .gia {
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .item .gia-goc {
+            font-weight: normal;
+            text-decoration: line-through;
+            font-size: 13px;
+            margin-left: 15px;
+        }
+
+        article.group-news {
+            border: 1px solid #333;
+            padding: 20px 10px 0px;
+            border-radius: 12px;
+            margin-bottom: 30px
+        }
+
+        .news {
+            margin-bottom: 20px;
+        }
+
+        .news img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .news a:hover {
+            text-decoration: none;
+        }
+
+        .news a h3 {
+            color: #555;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .news p {
+            color: #111;
+        }
+
+        .news p.info img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-bottom: 0;
+        }
+
+        .news p.info .author {
+            color: rgb(24, 158, 255);
+        }
+    </style>
+</head>
+
+<body onload="function_load();">
+    <header>
+        Công ty ABC
+    </header>
+
+    <div class="container-fluid">
+        <!-- Thiết lập kích thước màn hình mà nội dung có thể hiển thị -->
+        <h2 class="title">Có thể bạn thích</h2>
+
+        <div class="row" id="RelatedProducts">
+
+
+        </div>
+        <div id="result"></div>
+        <!-- End row -->
+
+        <div style="text-align: center; padding: 30px 0px;">
+            <button type="button" class="btn btn-outline-primary" id="ViewMore">Xem thêm</button>
+        </div>
+
+
+    </div>
+    <footer>Footer</footer>
+
+    <script type="text/javascript">
+        $.get({
+            url: "http://66.42.50.227/data-ajax.php",
+            data: {
+                GetProducts: "All",
+            },
+            dataType: "JSON",
+            success: function (data) {
+                console.log(data[0].Name);
+                getPrs(data);
+            }
+        });
+
+        var products;
+        function getPrs(data) {
+            products = data;
+        }
+
+        function function_load() {
+            var a = '';
+            for (var i = 0; i < 4; i++) {
+                a += `
+                <div class="col-xl-3 col-12 item">
+                    <article>
+                        <a href="">
+                            <img src="https://salt.tikicdn.com/cache/200x200/media/catalog/product/e/j/ejr351brw_1.u2769.d20161208.t120022.243831.jpg"
+                                alt="Nồi cơm điện"></a>
+                        <div class="giam-gia">-50%</div>
+                        <a href="">
+                            <div class="ten-sp">Nồi cơm điện vừa bán vừa cho</div>
+                        </a>
+                        <div class="gia">2.000.000 đ <span class="gia-goc">5.000.000 đ</span></div>
+                    </article>
+                </div>
+                `;
+            }
+            var _relativeProduct = document.getElementById('RelatedProducts');
+            _relativeProduct.innerHTML = a;
+        }
+
+        let _viewmore = document.getElementById('ViewMore');
+        _viewmore.onclick = function viewMore() {
+            var a = '';
+            for (var i = 0; i < 4; i++) {
+                a += `
+                <div class="col-xl-3 col-12 item">
+                    <article>
+                        <a href="">
+                            <img src="${products[i].Image_URL}"
+                                alt="Nồi cơm điện"></a>
+                        <div class="giam-gia">-50%</div>
+                        <a href="">
+                            <div class="ten-sp">${products[i].Name}</div>
+                        </a>
+                        <div class="gia">2.000.000 đ <span class="gia-goc">${products[i].Price}</span></div>
+                    </article>
+                </div>
+                `;
+            }
+            var _relativeProduct = document.getElementById('RelatedProducts');
+            _relativeProduct.innerHTML += a;
+        };
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
