@@ -1,0 +1,52 @@
+h3,
+.flower-info {
+    font-family: 'Roboto Slab', serif;
+}
+
+h3 {
+    border-top: 2px solid #dddddd;
+    border-bottom: 2px solid #dddddd;
+    padding: 5px 5px;
+    border-left: 4px solid rgb(154, 63, 182);
+    margin-bottom: 40px;
+}
+
+.bong {
+    width: 100%;
+    height: auto;
+}
+
+.flower {
+    position: relative;
+}
+
+.discount {
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    background-color: red;
+    padding: 3px 2px;
+}
+
+.mso {
+    color: rgb(154, 63, 182);
+}
+
+.org-price {
+    color: gray;
+    text-decoration: line-through;
+}
+
+.price {
+    color: red;
+}
+
+.flower-info {
+    padding-left: 10px;
+    margin-top: 20px;
+}
+
+.san-pham {
+    background-color: #eeeeee;
+    margin-top: 20px;
+}

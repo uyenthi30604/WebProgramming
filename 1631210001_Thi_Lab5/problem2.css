@@ -1,0 +1,62 @@
+.service-icon {
+    width: 64px;
+    height: auto;
+}
+
+.mt-0 {
+    font-size: 18px;
+    color: rgb(154, 63, 182);
+}
+
+.services {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 2px solid rgb(154, 63, 182);
+    border-bottom: 2px solid rgb(154, 63, 182);
+    margin-bottom: 40px;
+}
+
+hr.underline {
+    width: 40px;
+    border: 2px solid rgb(154, 63, 182);
+    margin-left: 0px;
+}
+
+.block {
+    display: inline-block;
+}
+
+.infor {
+    background-color: #eeeeee;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.details {
+    font-size: 12px;
+}
+
+#social i {
+    padding-right: 8px;
+}
+
+.contact {
+    font-weight: bold;
+    padding-right: 0 !important;
+}
+
+footer {
+    color: white;
+    background-color: #2C3E50;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.content {
+    font-size: 15px;
+}
+
+.title {
+    text-transform: uppercase;
+}

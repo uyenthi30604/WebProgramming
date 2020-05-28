@@ -1,0 +1,111 @@
+.header {
+    background-color: #2C3E50;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#hotline {
+    padding-left: 110px;
+}
+
+#address {
+    padding-right: 100px;
+}
+
+.normal {
+    font-weight: normal;
+}
+
+#store_name {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#search {
+    background-image: url(pts/find.png);
+    border: 1px solid #dddddd;
+    background-size: 12px;
+    background-position: 95% 50%;
+    padding-left: 20px;
+    background-repeat: no-repeat;
+    width: 180px;
+}
+
+.search {
+    padding-top: 50px;
+}
+
+#shopping {
+    width: 70%;
+    align-items: center;
+    padding-top: 40%;
+}
+
+#insideCart {
+    padding-right: 0px;
+}
+
+.price {
+    font-weight: bold;
+    color: red;
+}
+
+.cart {
+    padding-top: 20%;
+    font-size: 14px;
+}
+
+#menu>li {
+    display: inline-block;
+    padding: 5px 8px;
+    list-style-type: none;
+}
+
+.menu-deco {
+    background-color: rgb(154, 63, 182);
+    padding: 0px;
+    margin: 0px;
+}
+
+#menu {
+    text-align: center;
+    position: relative;
+}
+
+#menu>li>a {
+    color: white;
+    font-weight: bold;
+}
+
+.submenu {
+    list-style-type: none;
+    position: absolute;
+    display: none;
+    width: 150px;
+    padding-left: 0px;
+    top: 34px;
+    background-color: white;
+    border: 1px solid #dddddd;
+}
+
+.submenuItem>a {
+    color: rgb(154, 63, 182);
+    display: block;
+    width: 100px;
+    padding-left: 0px;
+    font-weight: bold;
+}
+
+#design a:hover+.submenu {
+    display: block;
+}
+
+.submenu #submenuItem a:hover {
+    background-color: rgb(154, 63, 182);
+    color: white;
+    display: block;
+}

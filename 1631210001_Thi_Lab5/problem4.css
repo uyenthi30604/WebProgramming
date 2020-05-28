@@ -1,0 +1,234 @@
+.header {
+    background-color: #2C3E50;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#hotline {
+    padding-left: 110px;
+}
+
+#address {
+    padding-right: 100px;
+}
+
+.normal {
+    font-weight: normal;
+}
+
+#store_name {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#search {
+    background-image: url(pts/find.png);
+    border: 1px solid #dddddd;
+    background-size: 12px;
+    background-position: 95% 50%;
+    padding-left: 20px;
+    background-repeat: no-repeat;
+    width: 180px;
+}
+
+.search {
+    padding-top: 50px;
+}
+
+#shopping {
+    width: 70%;
+    align-items: center;
+    padding-top: 40%;
+}
+
+#insideCart {
+    padding-right: 0px;
+}
+
+.price {
+    font-weight: bold;
+    color: red;
+}
+
+.cart {
+    padding-top: 20%;
+    font-size: 14px;
+}
+
+#menu>li {
+    display: inline-block;
+    padding: 5px 8px;
+    list-style-type: none;
+}
+
+.menu-deco {
+    background-color: #642D91;
+    padding: 0px;
+    margin: 0px;
+}
+
+#menu {
+    text-align: center;
+    position: relative;
+}
+
+#menu>li>a {
+    color: white;
+    font-weight: bold;
+}
+
+.submenu {
+    list-style-type: none;
+    position: absolute;
+    display: none;
+    width: 150px;
+    padding-left: 0px;
+    top: 34px;
+    background-color: white;
+    border: 1px solid #dddddd;
+}
+
+.submenuItem>a {
+    color: rgb(154, 63, 182);
+    display: block;
+    width: 100px;
+    padding-left: 0px;
+    font-weight: bold;
+}
+
+#design a:hover+.submenu {
+    display: block;
+}
+
+.submenu #submenuItem a:hover {
+    background-color: rgb(154, 63, 182);
+    color: white;
+    display: block;
+}
+
+
+/*  body*/
+
+h3,
+.flower-info {
+    font-family: 'Roboto Slab', serif;
+}
+
+h3 {
+    border-top: 2px solid #dddddd;
+    border-bottom: 2px solid #dddddd;
+    padding: 5px 5px;
+    border-left: 4px solid rgb(154, 63, 182);
+    margin-bottom: 40px;
+}
+
+.bong {
+    width: 100%;
+    height: auto;
+}
+
+.flower {
+    position: relative;
+}
+
+.discount {
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    background-color: red;
+    padding: 3px 2px;
+}
+
+.mso {
+    color: #642D91;
+}
+
+.org-price {
+    color: gray;
+    text-decoration: line-through;
+}
+
+.price {
+    color: red;
+}
+
+.flower-info {
+    padding-left: 10px;
+    margin-top: 20px;
+}
+
+.san-pham {
+    background-color: #eeeeee;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+
+/* footer */
+
+.service-icon {
+    width: 64px;
+    height: auto;
+}
+
+.mt-0 {
+    font-size: 18px;
+    color: rgb(154, 63, 182);
+}
+
+.services {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 2px solid rgb(154, 63, 182);
+    border-bottom: 2px solid rgb(154, 63, 182);
+    margin-bottom: 40px;
+}
+
+hr.underline {
+    width: 40px;
+    border: 2px solid rgb(154, 63, 182);
+    margin-left: 0px;
+}
+
+.block {
+    display: inline-block;
+}
+
+.infor {
+    background-color: #eeeeee;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.details {
+    font-size: 12px;
+}
+
+#social i {
+    padding-right: 8px;
+}
+
+.contact {
+    font-weight: bold;
+    padding-right: 0 !important;
+}
+
+footer {
+    color: white;
+    background-color: #2C3E50;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.content {
+    font-size: 15px;
+}
+
+.title {
+    text-transform: uppercase;
+}
