@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Problem 8</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <script type="text/javascript">
+        let number = 123456;
+        reverse(number);
+
+        function reverse(num) {
+            var arr = [];
+            var dv = 1;
+            while (num >= 10) {
+                var temp = num % 10;
+                num = Math.floor(num / 10);
+                arr.push(temp);
+                dv *= 10;
+            }
+            arr.push(num);
+
+            var result = 0;
+            for (var i = 0; i < arr.length; i++) {
+                result += (arr[i] * dv);
+                dv /= 10;
+            }
+            console.log(result)
+        }
+    </script>
+</body>
+
+</html>

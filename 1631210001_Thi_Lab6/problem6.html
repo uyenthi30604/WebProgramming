@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Problem 6</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <script type="text/javascript">
+        let numbers = [1, 6, 2, 9, 3, 7, 2];
+        sortNumber(numbers);
+
+        function sortNumber(a) {
+            var temp = 0;
+            var index = 0
+            for (var i = 0; i < a.length; i++) {
+                for (var j = i + 1; j < a.length; j++) {
+                    if (a[i] > a[j]) {
+                        temp = a[i];
+                        a[i] = a[j];
+                        a[j] = temp;
+
+                    }
+                }
+            }
+            console.log(a.join("\t"));
+        }
+    </script>
+</body>
+
+</html>

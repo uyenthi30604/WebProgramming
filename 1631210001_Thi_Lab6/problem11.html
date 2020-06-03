@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Problem 11</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        function product(_name, _image, _price) {
+            return {
+                name: _name,
+                image: _image,
+                price: _price,
+            }
+        }
+        pr_name = 'Candy';
+        pr_image = "http://....";
+        pr_price = 500;
+        let listOfProducts = [];
+        for (var i = 0; i < 4; i++) {
+            var aProduct = {};
+            aProduct = product(pr_name, pr_image, (pr_price - i));
+            listOfProducts.push(aProduct);
+        }
+        listOfProducts.push({
+            name: "exo",
+            image: "http://",
+            price: "480"
+        });
+        listOfProducts.push({
+            name: "exol",
+            image: "http://",
+            price: "120"
+        });
+
+        var result = sortByPrice(listOfProducts);
+        console.log(result);
+
+        function sortByPrice(arr) {
+            for (var i = 0; i < arr.length; i++) {
+                for (var j = i + 1; j < arr.length; j++) {
+                    if (+arr[i].price > +arr[j].price) {
+                        var temp_pr = arr[i];
+                        arr[i] = arr[j];
+                        arr[j] = temp_pr;
+                    }
+                }
+            }
+            return arr;
+        }
+    </script>
+</body>
+
+</html>
