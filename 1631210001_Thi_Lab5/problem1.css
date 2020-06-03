@@ -1,31 +1,42 @@
-.header {
-    background-color: #2C3E50;
+.info {
     color: white;
     padding-top: 8px;
     padding-bottom: 8px;
     font-size: 13px;
     font-weight: bold;
-}
-
-#hotline {
-    padding-left: 110px;
-}
-
-#address {
-    padding-right: 100px;
-}
-
-.normal {
-    font-weight: normal;
-}
-
-#store_name {
-    display: block;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
 
-#search {
+#firstInf {
+    width: 100%;
+    background-color: #2C3E50;
+}
+
+.signin {
+    text-align: center;
+}
+
+#store_name {
+    padding: 20px 20px;
+}
+
+.logo {
+    width: 100%;
+}
+
+.lo_shop {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search {
+    padding-top: 50px;
+}
+
+#search-place {
     background-image: url(pts/find.png);
     border: 1px solid #dddddd;
     background-size: 12px;
@@ -33,30 +44,33 @@
     padding-left: 20px;
     background-repeat: no-repeat;
     width: 180px;
-}
-
-.search {
-    padding-top: 50px;
-}
-
-#shopping {
-    width: 70%;
-    align-items: center;
-    padding-top: 40%;
-}
-
-#insideCart {
-    padding-right: 0px;
-}
-
-.price {
-    font-weight: bold;
-    color: red;
+    height: 30px;
 }
 
 .cart {
-    padding-top: 20%;
-    font-size: 14px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    padding-top: 4px;
+    font-size: 20px;
+}
+
+.shopping {
+    margin-right: 10px;
+    padding-top: 45px;
+}
+
+.shopping h5 {
+    font-size: 15px;
+}
+
+.price {
+    font-size: 18px;
+    color: red;
+    padding-top: 2px;
 }
 
 #menu>li {
@@ -66,9 +80,10 @@
 }
 
 .menu-deco {
-    background-color: rgb(154, 63, 182);
+    background-color: #652D92;
     padding: 0px;
     margin: 0px;
+    width: 90%;
 }
 
 #menu {
@@ -82,30 +97,51 @@
 }
 
 .submenu {
+    padding: 0px;
+    margin: 0px;
+}
+
+.submenu {
     list-style-type: none;
     position: absolute;
     display: none;
     width: 150px;
-    padding-left: 0px;
+    padding-left: 15px;
     top: 34px;
     background-color: white;
     border: 1px solid #dddddd;
+    text-align: left;
 }
 
 .submenuItem>a {
-    color: rgb(154, 63, 182);
+    color: #652D92;
     display: block;
     width: 100px;
     padding-left: 0px;
     font-weight: bold;
 }
 
-#design a:hover+.submenu {
+.item:hover {
+    background-color: rgb(142, 78, 194);
+}
+
+#design:hover .submenu {
     display: block;
 }
 
-.submenu #submenuItem a:hover {
-    background-color: rgb(154, 63, 182);
+.submenuItem:hover {
+    background-color: rgb(142, 78, 194);
+}
+
+.submenuItem:hover>a {
     color: white;
-    display: block;
+}
+
+.mainMenu {
+    background-color: #652D92;
+    margin-top: 30px;
+    width: 100%;
+}
+.media-body {
+    padding-left: 15px;
 }

@@ -60,3 +60,16 @@ footer {
 .title {
     text-transform: uppercase;
 }
+
+.icon {
+    width: 70px;
+    height: 70px;
+    font-size: 40px;
+    background-color: #652D92;
+    text-align: center;
+    color: white;
+}
+
+.media-body {
+    padding-left: 15px;
+}

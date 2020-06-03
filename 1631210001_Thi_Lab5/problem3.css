@@ -4,10 +4,11 @@ h3,
 }
 
 h3 {
-    border-top: 2px solid #dddddd;
-    border-bottom: 2px solid #dddddd;
+    border-top: 2px dotted #dddddd;
+    border-bottom: 2px dotted #dddddd;
     padding: 5px 5px;
-    border-left: 4px solid rgb(154, 63, 182);
+    border-left: 5px solid #652D92;
+    margin-top: 20px;
     margin-bottom: 40px;
 }
 
@@ -49,4 +50,39 @@ h3 {
 .san-pham {
     background-color: #eeeeee;
     margin-top: 20px;
+}
+
+.mt-0 {
+    font-size: 15px;
+}
+
+#news-flower {
+    width: 20%;
+    max-width: 100%;
+}
+
+.watched {
+    background-color: #eeeeee;
+    padding: 10px 10px;
+    position: relative;
+}
+
+.watched-hr {
+    border: 1px solid #dddddd;
+}
+
+.news-discount {
+    position: absolute;
+    background-color: red;
+    padding: 3px 2px;
+    right: 0px;
+    bottom: 10%;
+}
+
+.calendar {
+    color: gray;
+}
+
+.news-item {
+    margin-top: 10px;
 }

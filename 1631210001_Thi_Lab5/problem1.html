@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Problem 2</title>
+    <title>Problem 1</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="problem1.css">
@@ -11,101 +11,116 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="header">
-            <div class="row">
-                <div class="col-md-4 col-12" id="hotline">
-                    <i class="fa fa-phone" aria-hidden="true"></i>
-                    <span class="normal"> Holine: </span>0968 159 239- 08.38 409 092
-                </div>
-                <div class="col-md-4 col-12" id="address">
-                    <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span class="normal"> Địa chỉ:</span> 01 Nguyễn Cửu Văn, Bình Thạnh, TPHCM
-                </div>
-                <div class="col-md-4 col-12">
-                    Đăng nhập <span class="normal">hoặc</span> Tạo tài khoản
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-6 col-12">
-                <img src="pts/store_name.PNG" alt="store_name" id="store_name">
-            </div>
-            <div class="search">
-                <div class="col-md-3 col-12">
-                    <input type="text" name="search" id="search" placeholder="Tìm kiếm">
-                </div>
-            </div>
-            <div class="col-md-3 col-12">
-                <div class="row">
-                    <div class="col-md-4" id="insideCart">
-                        <img src="pts/shopping.PNG" alt="shopping" id="shopping">
-                    </div>
-                    <!-- <div class="cart"> -->
-                    <div class="col-md-8">
-                        <div class="cart">
-                            <div>3 sản phẩm</div>
-                            <p class="price">1,289,000 đ</p>
+    <header>
+        <div id="firstInf">
+            <div class="container-fluid">
+                <div class="info">
+                    <div class="row">
+                        <div class="col-md-4 col-12" id="hotline">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <span class="normal"> Holine: </span>0968 159 239- 08.38 409 092
+                        </div>
+                        <div class="col-md-4 col-12" id="address">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <span class="normal"> Địa chỉ:</span> 01 Nguyễn Cửu Văn, Bình Thạnh, TPHCM
+                        </div>
+
+                        <div class="col-md-4 col-12">
+                            <div class="signin">
+                                Đăng nhập <span class="normal">hoặc</span> Tạo tài khoản
+                            </div>
                         </div>
                     </div>
-                    <!-- </div> -->
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="container-fluid">
-        <div class="menu-deco">
-            <ul id="menu">
-                <li class="item">
-                    <a href="#" class="text-decoration-none">TRANG CHỦ</a>
-                </li>
-                <li class="item">
-                    <a href="#" class="text-decoration-none">HOA SINH NHẬT</a>
-                </li>
-                <li class="item">
-                    <a href="#" class="text-decoration-none">HOA TÌNH YÊU</a>
-                </li>
-                <li class="item">
-                    <a href="#" class="text-decoration-none">HOA CHÚC MỪNG</a>
-                </li>
-                <li class="item">
-                    <a href="#" class="text-decoration-none">HOA VĂN PHÒNG</a>
-                </li>
-                <li class="item">
-                    <a href="#" class="text-decoration-none">CHỦ ĐỀ</a>
-                </li>
-                <li class="item" id="design">
-                    <a href="#" class="text-decoration-none">THIẾT KẾ</a>
-                    <ul class="submenu">
-                        <li class="submenuItem">
-                            <a href="#" class="text-decoration-none">HOA CẢNH</a>
+        <div class="logo">
+            <div class="container-fluid">
+                <div class="lo_shop">
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <img src="pts/Logo.png" alt="store_name" id="store_name">
+                        </div>
+                        <div class="search">
+                            <div class="col-md-3 col-12">
+                                <input type="text" name="search" id="search-place" placeholder="Tìm kiếm">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12">
+                            <div class="shopping">
+                                <div class="media">
+                                    <div class="class=" mr-3 "">
+                                        <div class="cart">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        <h5 class="mt-0">3 sản phẩm</h5>
+                                        <span class="price">1,289,000 đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--  -->
+        <div class="mainMenu">
+            <div class="container-fluid">
+                <div class="menu-deco">
+                    <ul id="menu">
+                        <li class="item">
+                            <a href="#" class="text-decoration-none">TRANG CHỦ</a>
                         </li>
-                        <li class="submenuItem">
-                            <a href="#" class="text-decoration-none">HOA GIỎ</a>
+                        <li class="item">
+                            <a href="#" class="text-decoration-none">HOA SINH NHẬT</a>
                         </li>
-                        <li class="submenuItem">
-                            <a href="#" class="text-decoration-none">HOA LẲNG</a>
+                        <li class="item">
+                            <a href="#" class="text-decoration-none">HOA TÌNH YÊU</a>
                         </li>
-                        <li class="submenuItem">
-                            <a href="#" class="text-decoration-none">HOA BÓ</a>
+                        <li class="item">
+                            <a href="#" class="text-decoration-none">HOA CHÚC MỪNG</a>
                         </li>
-                        <li class="submenuItem">
-                            <a href="#" class="text-decoration-none">HOA KỆ</a>
+                        <li class="item">
+                            <a href="#" class="text-decoration-none">HOA VĂN PHÒNG</a>
                         </li>
-                        <li class="submenuItem">
-                            <a href="#" class="text-decoration-none">HOA CHẬU</a>
+                        <li class="item">
+                            <a href="#" class="text-decoration-none">CHỦ ĐỀ</a>
+                        </li>
+                        <li class="item" id="design">
+                            <a href="#" class="text-decoration-none">THIẾT KẾ</a>
+                            <ul class="submenu">
+                                <li class="submenuItem">
+                                    <a href="#" class="text-decoration-none">HOA CẢNH</a>
+                                </li>
+                                <li class="submenuItem">
+                                    <a href="#" class="text-decoration-none">HOA GIỎ</a>
+                                </li>
+                                <li class="submenuItem">
+                                    <a href="#" class="text-decoration-none">HOA LẲNG</a>
+                                </li>
+                                <li class="submenuItem">
+                                    <a href="#" class="text-decoration-none">HOA BÓ</a>
+                                </li>
+                                <li class="submenuItem">
+                                    <a href="#" class="text-decoration-none">HOA KỆ</a>
+                                </li>
+                                <li class="submenuItem">
+                                    <a href="#" class="text-decoration-none">HOA CHẬU</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="text-decoration-none">QUÀ TẶNG</a>
                         </li>
                     </ul>
-                </li>
-                <li class="item">
-                    <a href="#" class="text-decoration-none">QUÀ TẶNG</a>
-                </li>
-            </ul>
+                </div>
+            </div>
         </div>
-    </div>
+    </header>
 </body>
 
 </html>
