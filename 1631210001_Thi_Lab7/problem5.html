@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Problem 1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <style type="text/css">
+        .smallpic,
+        #bigpic {
+            width: 100%;
+            height: 100%;
+        }
+        
+        #bigpic {
+            margin-top: 20px;
+        }
+        
+        .csspic {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="lab7_pts/aurora.jpg" alt="aurora" id="aurora" class="smallpic" />
+            </div>
+            <div class="col-md-3">
+                <img src="lab7_pts/beach.jfif" alt="beach" id="beach" class="smallpic" />
+            </div>
+            <div class="col-md-3">
+                <img src="lab7_pts/mountain.jpg" alt="mountain" id="mountain" class="smallpic" />
+            </div>
+            <div class="col-md-3">
+                <img src="lab7_pts/sunset.jpeg" alt="sunset" id="sunset" class="smallpic" />
+            </div>
+        </div>
+        <div id="bigpic">
+            <img src="#" alt="bigpic" class="csspic">
+        </div>
+    </div>
+    <script>
+        $(".smallpic").click(function() {
+            var pic_src = $(this).attr("src");
+            $("#bigpic").children().attr("src", pic_src);
+        });
+
+        // javascript
+        // document.getElementsByClassName(".smallpic").addEventListener("click", changeImg);
+
+        // function changeImg() {
+        //     var pic_src = document.getElementsByClassName(".smallpic").getAttribute("src");
+        //     console.log(pic_src);
+        // }
+    </script>
+</body>
+
+</html>

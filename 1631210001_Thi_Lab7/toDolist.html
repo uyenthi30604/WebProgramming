@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>To Do List</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        .list {
+            list-style-type: none;
+            padding: 10px;
+            position: relative;
+            background-color: #eeeeee;
+        }
+        
+        #header {
+            background-color: #659FF7;
+            padding: 10px;
+        }
+        
+        #title,
+        #addbtn {
+            width: 100%;
+            margin: 0;
+        }
+        
+        .icon {
+            color: white;
+            font-size: 18px;
+            width: 30px;
+            display: none;
+            text-align: left;
+        }
+        
+        .delete {
+            position: absolute;
+            cursor: pointer;
+        }
+        
+        .listItem {
+            padding-left: 30px;
+            font-size: 20px;
+            margin: 0;
+        }
+        
+        h3 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container-fluid">
+            <h3>My To Do List</h3>
+            <div class="row">
+                <div class="col-md-10">
+                    <input id="title" type="text" placeholder="Title..." />
+                </div>
+                <div class="col-md-2">
+                    <button id="addbtn">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <ul class="list">
+            <li class="listItem">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="icon">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                        </div>
+                        Hit the gym
+                    </div>
+                    <div class="col-md-3">
+                        <div class="delete">
+                            &times;
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        $("#addbtn").click(function() {
+            var v = $("#title").val();
+            var str = `<li class="listItem">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="icon">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                        </div>
+                        ${v}
+                    </div>
+                    <div class="col-md-3">
+                        <div class="delete">
+                            &times;
+                        </div>
+                    </div>
+                </div>
+            </li>`;
+            $(".list").append(str);
+            $("#title").val("");
+        })
+
+        $(".list").on("click", ".delete", function() {
+            $(this).closest('li').remove();
+        });
+
+        $(".list").on("click", ".listItem", function() {
+            $(this).css("text-decoration", "line-through");
+            $(this).css({
+                "background-color": "#dddddd",
+                "color": "white"
+            });
+            $(this).children().children().children().css("display", "inline-block");
+        });
+    </script>
+</body>
+
+</html>
